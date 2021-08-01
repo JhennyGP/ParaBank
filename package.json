@@ -1,0 +1,41 @@
+{
+  "name": "ParaBank",
+  "version": "1.0.0",
+  "description": "Desafio final - Individual",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:report": "node ./cypress/support/reporter.js",
+    "cy:clear": "node ./cypress/support/clear.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhennyGP/ParaBank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhennyGP/ParaBank/issues"
+  },
+  "homepage": "https://github.com/JhennyGP/ParaBank#readme",
+  "devDependencies": {
+    "ajv": "^8.6.2",
+    "cypress": "^8.1.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "faker": "^5.5.3",
+    "fs-extra": "^10.0.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "rimraf": "^3.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/step_definitions/",
+    "cucumberJson": {
+      "generate": false,
+      "outputFolder": "report/json"
+    }
+  }
+}
