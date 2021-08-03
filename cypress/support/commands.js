@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('StepNotImplemented', () => {
+    console.log("O step não foi implementado ainda");
+    cy.log("O step não foi implementado ainda")
+})
