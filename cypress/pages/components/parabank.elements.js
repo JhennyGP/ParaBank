@@ -11,21 +11,34 @@ const Login = {
 
 const Cadastro = {
     TXT_REGISTER: '.title',
+    TXT_SUCESSO: '.title',
 
-    INP_NAME: '#customer\.firstName',
-    INP_LASTNAME: '#customer\.lastName',
-    INP_ADDRESS: '#customer\.address\.street',
-    INP_CITY: '#customer\.address\.city',
-    INP_STATE: '#customer\.address\.state',
-    INP_ZIPCODE: '#customer\.address\.zipCode',
-    INP_PHONE: '#customer\.phoneNumber',
-    INP_SSN: '#customer\.ssn',
-    
-    INP_USERNAME:'#customer\.username',
-    INP_PASSWORD: '#customer\.password',
-    INP_REPEATED: '#repeatedPassword',    
-    BTN_REGISTER: '[colspan="2"] > .button'
+    INP_NAME: ':nth-child(1) > [width="20%"]',
+    INP_LASTNAME: ':nth-child(2) > [width="20%"]',
+    INP_ADDRESS: ':nth-child(3) > [width="20%"]',
+    INP_CITY: ':nth-child(4) > [width="20%"]',
+    INP_STATE: ':nth-child(5) > [width="20%"]',
+    INP_ZIPCODE: ':nth-child(6) > [width="20%"]',
+    INP_PHONE: ':nth-child(7) > [width="20%"]',
+    INP_SSN: ':nth-child(8) > [width="20%"]',
+    INP_USERNAME: ':nth-child(10) > [width="20%"]',
+    INP_PASSWORD: ':nth-child(11) > [width="20%"]',
+    INP_REPEATED: ':nth-child(12) > [width="20%"]',
+
+    BTN_REGISTER: '[colspan="2"] > .button',
+
+    MSG_NAME: ':nth-child(1) > [width="50%"]',
+    MSG_LASTNAME: ':nth-child(2) > [width="50%"]',
+    MSG_ADDRESS: ':nth-child(3) > [width="50%"]',
+    MSG_CITY: ':nth-child(4) > [width="50%"]',
+    MSG_STATE: ':nth-child(5) > [width="50%"]',
+    MSG_ZIPCODE: ':nth-child(6) > [width="50%"]',
+    MSG_PHONE: ':nth-child(7) > [width="50%"]',
+    MSG_SSN: ':nth-child(8) > [width="50%"]',
+    MSG_USERNAME: ':nth-child(10) > [width="50%"]',
+    MSG_PASSWORD: ':nth-child(11) > [width="50%"]',
+    MSG_REPEATED: ':nth-child(12) > [width="50%"]'
 }
 
 
-export { Login, Home , Cadastro}
+export { Login, Home, Cadastro }

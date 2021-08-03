@@ -14,9 +14,10 @@ export class Factory {
                     "state": faker.address.state(),
                     "zipCode": faker.address.zipCode(),
                     "phoneNumber": faker.phone.phoneNumber(),
-                    "ssn": faker.datatype.number(9),
+                    "ssn": faker.datatype.number(),
                     "userName": faker.internet.userName(),
-                    "password": faker.internet.password()
+                    "password": "teste",
+                    "repeatedPassword": "teste"
                 }
             case 'invalid':
                 return {
@@ -30,21 +31,8 @@ export class Factory {
                     "phoneNumber": "5511991011010",
                     "ssn": "123456789",
                     "userName": "TesteCompasso",
-                    "password": "teste"
-                }
-            case 'empty':
-                return {
-                    "firstName": "",
-                    "lastName": "",
-                    "email": "",
-                    "address": "",
-                    "city": "",
-                    "state": "",
-                    "zipCode": "",
-                    "phoneNumber": "",
-                    "ssn": "",
-                    "userName": "",
-                    "password": ""
+                    "password": "teste",
+                    "repeatedPassword": "teste"
                 }
             default:
                 return {
