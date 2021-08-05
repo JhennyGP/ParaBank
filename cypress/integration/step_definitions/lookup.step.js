@@ -32,7 +32,7 @@ Then(`deverá retornar o usuario e senha`, () => {
 });
 
 And(`logar automaticamente`, () => {
-	return ParaBank.verificar_logado()
+	return ParaBank.verificar_login()
 });
 
 // invalidos

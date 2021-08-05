@@ -7,21 +7,30 @@ export class ParaBank extends Base {
         cy.visit('/')
     }
 
+    static validar_home(){
+        super.verifyIfElementExists(Home.INF_EVENTS)
+        super.verifyIfElementExists(Home.INF_SERVICES)
+        super.verifyIfElementExists(Home.INF_SERVICETWO)
+    }
     // LOGIN
     static preencher_login_type(type) {
         let dados_login = Factory.login(type)
-        super.typeValue(Login.INP_USERNAME, dados_login.userName)
-        super.typeValue(Login.INP_PASSWORD, dados_login.password)
+        cy.get(Login.INP_USERNAME).type(dados_login.userName)
+        cy.get(Login.INP_PASSWORD).type(dados_login.password)
         super.clickOnElement(Login.BTN_LOGIN)
     }
     static msg_login() {
         super.verifyIfElementExists(Login.TXT_ERRO)
     }
 
-    static verificar_logado(){
+    static verificar_login(){
         super.validateElementText(Home.TXT_LOGADO, 'Welcome')
     }
 
+    static logout(){
+        super.clickOnElement(Login.BTN_LOGOUT)
+    }
+    
     // CADASTRO
     static pag_cadastro() {
         super.clickOnElement(Home.LNK_REGISTER)

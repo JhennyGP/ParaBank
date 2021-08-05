@@ -1,14 +1,17 @@
 const Home = {
     LNK_REGISTER: '#loginPanel > :nth-child(3) > a',
     LNK_FORGOT: '#loginPanel > :nth-child(2) > a',
-    TXT_LOGADO: '.smallText'
+    TXT_LOGADO: '.smallText',
+    INF_SERVICES: 'ul.services',
+    INF_SERVICETWO: '.servicestwo',
+    INF_EVENTS: '.events'
 }
 const Login = {
     INP_USERNAME: ':nth-child(2) > .input',
     INP_PASSWORD: ':nth-child(4) > .input',
     BTN_LOGIN: ':nth-child(5) > .button',
     TXT_ERRO: '.error',
-    TXT_LOGADO: ''
+    BTN_LOGOUT: '#leftPanel > ul > :nth-child(8) > a'
 }
 
 const Cadastro = {
