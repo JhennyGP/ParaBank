@@ -21,12 +21,12 @@ export class Factory {
                 }
             case 'invalid':
                 return {
-                    "firstName": "Teste",
+                    "firstName": "Jennifer",
                     "lastName": "Compasso",
-                    "email": "teste@compasso.com.br",
-                    "address": "R grande do sul",
-                    "city": "RS",
-                    "state": "Passo Fundo",
+                    "email": "jennifer@compasso.com.br",
+                    "address": "Av Sen Teotonio Vilela",
+                    "city": "Sao Paulo",
+                    "state": "SP",
                     "zipCode": "01233001",
                     "phoneNumber": "5511991011010",
                     "ssn": "123456789",
@@ -50,13 +50,51 @@ export class Factory {
                 }
             case 'valid':
                 return {
-                    "userName": "a",
+                    "userName": "TesteCompasso",
                     "password": "teste"
                 }
             case 'empty':
                 return {
                     "userName": " ",
                     "password": " "
+                }
+            default:
+                return {
+                    notfound: "The type was not found, please verify!"
+                }
+        }
+    }
+    static forgot(type) {
+        switch (type) {
+            case 'invalid':
+                return {
+                    "firstName": faker.name.firstName(),
+                    "lastName": faker.name.lastName(),
+                    "address": faker.address.streetAddress(),
+                    "city": faker.address.city(),
+                    "state": faker.address.state(),
+                    "zipCode": faker.address.zipCode(),
+                    "ssn": faker.datatype.number()
+                }
+            case 'valid':
+                return {
+                    "firstName": "Jennifer",
+                    "lastName": "Compasso",
+                    "address": "Av Sen Teotonio Vilela",
+                    "city": "Sao Paulo",
+                    "state": "SP",
+                    "zipCode": "01233001",
+                    "ssn": "123456789"
+                }
+                case 'empty':
+                return {
+                    "firstName": " ",
+                    "lastName": " ",
+                    "address": " ",
+                    "city": " ",
+                    "state": " ",
+                    "zipCode": " ",
+                    "ssn": " "
                 }
             default:
                 return {
