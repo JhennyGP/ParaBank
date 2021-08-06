@@ -1,0 +1,184 @@
+[
+  {
+    "description": "    Como usuario\n    Quero utilizar todas as funções da Home",
+    "keyword": "Feature",
+    "name": "Home",
+    "line": 1,
+    "id": "home",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "home;fazer-login-invalido",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Fazer Login invalido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 4384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "fazer o login com os dados do tipo \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 2258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "deverá mostrar a mensagem \"The username and password could not be verified\"",
+            "result": {
+              "status": "failed",
+              "duration": 5064000000,
+              "error_message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.error`, but never found it.\n    at Function.verifyIfElementExists (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\login.feature:526:32)\n    at Function.msg_login (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\login.feature:676:101)\n    at Context.eval (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\login.feature:237:23)\n    at Context.resolveAndRunStepDefinition (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\login.feature:11634:9)\n    at Context.eval (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\login.feature:10952:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "home;fazer-login-invalido",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Fazer Login invalido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 4082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "fazer o login com os dados do tipo \"empty\"",
+            "result": {
+              "status": "passed",
+              "duration": 970000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "deverá mostrar a mensagem \"Please enter a username and password\"",
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home;fazer-login-valido",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Fazer Login valido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3449000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "fazer o login com os dados do tipo válido \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 2245000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "deverá ser logado com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home;fazer-logout",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Fazer Logout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "fazer o login com os dados do tipo válido \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 1560000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "clicar para sair do sistema",
+            "result": {
+              "status": "passed",
+              "duration": 917000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "deverá ser redirecionado a pagina inicial",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "description": "    Como novo usuario\n    Quero me cadastrar no sistema\n    Para ter acesso as funcoes",
+    "keyword": "Feature",
+    "name": "Cadastro",
+    "line": 1,
+    "id": "cadastro",
+    "tags": [],
+    "uri": "register.feature",
+    "elements": [
+      {
+        "id": "cadastro;cadastro-de-usuario-vazio",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Cadastro de usuario vazio",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 4699000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clicar em register",
+            "result": {
+              "status": "passed",
+              "duration": 1316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "devera ser redirecionado a pagina de cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "clicar no botão register sem preencher os campos",
+            "result": {
+              "status": "passed",
+              "duration": 987000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "devera mostrar a mensagem \"is required\" em todos os campos vazios",
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuario",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Cadastro de usuario",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 4123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clicar em register",
+            "result": {
+              "status": "passed",
+              "duration": 844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "devera ser redirecionado a pagina de cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "cadastrar usuario com os dados do tipo \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 5187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "devera mostrar a mensagem \"welcome\"",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro;cadastro-de-usuario",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Cadastro de usuario",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clicar em register",
+            "result": {
+              "status": "passed",
+              "duration": 884000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "devera ser redirecionado a pagina de cadastro",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "cadastrar usuario com os dados do tipo \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 4585000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "devera mostrar a mensagem \"already exists\"",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -28,7 +28,7 @@ export class Register extends Base {
     }
 
     static bnt_register() {
-        super.clickOnElement(EL_Cadastro.BTN_SEND)
+        super.clickOnElement(EL_Home.BTN_SEND)
     }
 
     static msg_cadastro_sucesso() {

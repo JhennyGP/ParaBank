@@ -17,7 +17,8 @@ export class Lookup extends Base {
         super.typeValue(EL_Forgot.INP_STATE, forgot_data.state)
         super.typeValue(EL_Forgot.INP_ZIPCODE, forgot_data.zipCode)
         super.typeValue(EL_Forgot.INP_SSN, forgot_data.ssn)
-        super.clickOnElement(EL_Forgot.BTN_SEND)
+        
+        super.clickOnElement(EL_Home.BTN_SEND)
     }
 
     static validar_pag_recuperacao() {
