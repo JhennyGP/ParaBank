@@ -1,4 +1,5 @@
 import faker, { fake } from 'faker'
+//fake = Faker('pt_BR')
 
 export class Factory {
 
@@ -95,6 +96,34 @@ export class Factory {
                     "state": "",
                     "zipCode": "",
                     "ssn": ""
+                }
+            default:
+                return {
+                    notfound: "The type was not found, please verify!"
+                }
+        }
+    }
+    static profile(type) {
+        switch (type) {
+            case 'incrementados':
+                return {
+                    "firstName": faker.name.firstName(),
+                    "lastName": faker.name.lastName(),
+                    "address": faker.address.streetAddress(),
+                    "city": faker.address.city(),
+                    "state": faker.address.state(),
+                    "zipCode": faker.address.zipCode(),
+                    "phoneNumber": faker.phone.phoneNumber()
+                }
+            case 'substituidos':
+                return {
+                    "firstName": "Compasso",
+                    "lastName": "Compasso",
+                    "address": "address",
+                    "city": "city",
+                    "state": "ST",
+                    "zipCode": "1200000",
+                    "phoneNumber": "11991011010"
                 }
             default:
                 return {

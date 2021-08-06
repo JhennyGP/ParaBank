@@ -72,10 +72,6 @@ export default class Base {
     this.getElement(element).should('exist', { timeout: Cypress.env('global_timeout') });
   }
 
-  static verifyIfElementDontExists(element) {
-    this.getElement(element).should('not.be.exit', { timeout: Cypress.env('global_timeout') });
-  }
-
   static verifyIfElementIsHidden(element) {
     this.getElement(element).should('not.be.visible', { timeout: Cypress.env('global_timeout') });
   }

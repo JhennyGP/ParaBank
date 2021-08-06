@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 import { Given, When, Then , And } from 'cypress-cucumber-preprocessor/steps'
-import { ParaBank } from '../../pages/parabank.page'
+import { Lookup } from '../../pages/lookup.page'
+import { ParaBank } from '../../pages/parabank.page';
 
 beforeEach(() => {
 	Given(`que esteja na pagina principal`, () => {
@@ -8,27 +9,27 @@ beforeEach(() => {
 	});
 	
 	When(`clicar o botão de recuperar login`, () => {
-		return ParaBank.pag_recuperarLogin()
+		return Lookup.pag_recuperarLogin()
 	});
 });
 
 // validar pagina
 Then(`deverá ser redirecionado para a página de recuperar login`, () => {
-	return ParaBank.validar_pag_recuperacao()
+	return Lookup.validar_pag_recuperacao()
 });
 
 And(`aparecer os campos da página a serem preenchidos`, () => {
-	return ParaBank.validar_campos_recuperacao()
+	return Lookup.validar_campos_recuperacao()
 });
 
 //validos
 When(`preencher os campos com dados validos {string}`, (type) => {
 	console.log(type);
-	return ParaBank.preencher_recuperacao_type(type)
+	return Lookup.preencher_recuperacao_type(type)
 });
 
 Then(`deverá retornar o usuario e senha`, () => {
-	return ParaBank.result_recuperacao()
+	return Lookup.result_recuperacao()
 });
 
 And(`logar automaticamente`, () => {
@@ -38,10 +39,10 @@ And(`logar automaticamente`, () => {
 // invalidos
 When(`preencher os campos com dados invalidos {string}`, (type) => {
 	console.log(type);
-	return ParaBank.preencher_recuperacao_type(type)
+	return Lookup.preencher_recuperacao_type(type)
 });
 
 Then(`deverá mostrar a mensagem {string}`, (msg) => {
 	console.log(msg);
-	return ParaBank.result_recuperacao_invalid(type)
+	return Lookup.result_recuperacao_invalid(type)
 });
