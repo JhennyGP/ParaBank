@@ -1,0 +1,222 @@
+[
+  {
+    "description": "    Como usuário cadastrado\n    Quero recuperar meu usuário e senha",
+    "keyword": "Feature",
+    "name": "Recuperar informações do Login",
+    "line": 1,
+    "id": "recuperar-informações-do-login",
+    "tags": [],
+    "uri": "lookup.feature",
+    "elements": [
+      {
+        "id": "recuperar-informações-do-login;página-recuperar-login",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Página Recuperar login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clicar o botão de recuperar login",
+            "result": {
+              "status": "passed",
+              "duration": 878000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "deverá ser redirecionado para a página de recuperar login",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "aparecer os campos da página a serem preenchidos",
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "recuperar-informações-do-login;recuperar-login-válido",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Recuperar login válido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clicar o botão de recuperar login",
+            "result": {
+              "status": "passed",
+              "duration": 911000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "preencher os campos com dados validos \"valid\"",
+            "result": {
+              "status": "passed",
+              "duration": 3341000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "deverá retornar o usuario e senha",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `:nth-child(10) > [width=\"20%\"]`, but never found it.\n    at Function.verifyIfElementExists (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\lookup.feature:526:32)\n    at Function.result_recuperacao (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\lookup.feature:769:102)\n    at Context.eval (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\lookup.feature:290:25)\n    at Context.resolveAndRunStepDefinition (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\lookup.feature:11634:9)\n    at Context.eval (https://parabank.parasoft.com/__cypress/tests?p=cypress\\integration\\spec\\lookup.feature:10952:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "logar automaticamente",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "recuperar-informações-do-login;recuperar-login-inválido",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Recuperar login inválido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 4191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clicar o botão de recuperar login",
+            "result": {
+              "status": "passed",
+              "duration": 864000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "preencher os campos com dados invalidos \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 4619000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "deverá mostrar a mensagem \"The customer information provided could not be found\"",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "recuperar-informações-do-login;recuperar-login-inválido",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Recuperar login inválido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "que esteja na pagina principal",
+            "result": {
+              "status": "passed",
+              "duration": 3554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "clicar o botão de recuperar login",
+            "result": {
+              "status": "passed",
+              "duration": 500000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "preencher os campos com dados invalidos \"empty\"",
+            "result": {
+              "status": "passed",
+              "duration": 1049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "deverá mostrar a mensagem \"Please enter a username and password\"",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

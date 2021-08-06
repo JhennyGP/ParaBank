@@ -1,0 +1,9 @@
+{
+    "video": false,
+    "viewportWidth": 1520,
+    "viewportHeight": 880,
+    "chromeWebSecurity": false,
+    "numTestsKeptInMemory": 5,
+    "ignoreTestFile": "*.js",
+    "testFiles": "**/*.feature"
+    }

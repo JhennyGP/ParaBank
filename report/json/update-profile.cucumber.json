@@ -1,0 +1,223 @@
+[
+  {
+    "description": "    Como usuário com acesso a aplicação\n    Quero consultar e editar meus dados",
+    "keyword": "Feature",
+    "name": "Atualizar dados cadastrados",
+    "line": 1,
+    "id": "atualizar-dados-cadastrados",
+    "tags": [],
+    "uri": "update-profile.feature",
+    "elements": [
+      {
+        "id": "atualizar-dados-cadastrados;consultar-dados",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Consultar dados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "usuário esteja logado",
+            "result": {
+              "status": "passed",
+              "duration": 5389000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "estar no menu 'Update Contact Info'",
+            "result": {
+              "status": "passed",
+              "duration": 813000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "clicar no menu 'Update Contact Info'",
+            "result": {
+              "status": "passed",
+              "duration": 923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "deverá ser redirecionado para a página de atualizar dados cadastrados",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "mostrar os campos preenchidos com os dados do usuário",
+            "result": {
+              "status": "passed",
+              "duration": 186000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "atualizar-dados-cadastrados;atualizar-dados-sem-alteração",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Atualizar dados sem alteração",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "usuário esteja logado",
+            "result": {
+              "status": "passed",
+              "duration": 5100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "estar no menu 'Update Contact Info'",
+            "result": {
+              "status": "passed",
+              "duration": 474000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "não alterar os dados cadastrais",
+            "result": {
+              "status": "passed",
+              "duration": 189000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "deverá mostrar a mensagem de sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "atualizar-dados-cadastrados;atualizar-dados",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Atualizar dados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "usuário esteja logado",
+            "result": {
+              "status": "passed",
+              "duration": 4443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "estar no menu 'Update Contact Info'",
+            "result": {
+              "status": "passed",
+              "duration": 722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "alterar os dados cadastrais por dados \"incrementados\"",
+            "result": {
+              "status": "passed",
+              "duration": 3520000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "deverá mostrar a mensagem de sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "atualizar-dados-cadastrados;atualizar-dados",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Atualizar dados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "usuário esteja logado",
+            "result": {
+              "status": "passed",
+              "duration": 4930000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "estar no menu 'Update Contact Info'",
+            "result": {
+              "status": "passed",
+              "duration": 1035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "alterar os dados cadastrais por dados \"substituidos\"",
+            "result": {
+              "status": "passed",
+              "duration": 2851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "deverá mostrar a mensagem de sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

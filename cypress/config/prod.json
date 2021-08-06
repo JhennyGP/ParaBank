@@ -1,0 +1,8 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "https://parabank.parasoft.com/",
+    "env": {
+        "global_timeout": "5000",
+        "environment": "PROD"
+        }
+    }
