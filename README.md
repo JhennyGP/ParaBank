@@ -10,8 +10,6 @@ Desafio final - Individual
     npx cypress open
 * Cypress-Cucumber-preprocessor: 
     npm i cypress-cucumber-preprocessor --save-dev
-* ajv: validador de json-schema:
-    npm i ajv --save-dev
 * Faker e fs-extra:
     npm i --save-dev fs-extra faker
 * Report
